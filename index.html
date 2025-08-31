@@ -9,19 +9,20 @@
 </head>
 
 <body>
-    <header class="mt-7 mx-37 mb-30 ">
-        <nav class="flex justify-between items-center ">
+    <header class="lg:mt-7 lg:mx-37 lg:mb-30 ">
+        <nav class="flex justify-between items-center  ">
             <div class="w-25 h-18"><img src="assets/logo.png" alt=""></div>
-            <div>
-                <ul class="flex gap-10 text-lg text-ag font-medium regular">
+            <div class="flex gap-10">
+                <ul class="flex gap-10 text-lg text-ag font-medium sm:font-normal ">
                     <li>Home</li>
                     <li>Shop</li>
                     <li>About us</li>
-                    <div class="flex gap-0">
-                        <li class="w-8 h-8"><img src="Cart icon.jpeg" alt=""></li>
-                        <li>Cart ($56)</li>
-                    </div>
                 </ul>
+                <ul class="flex gap-0 text-lg text-ag font-medium list-none">
+                    <li class="w-8 h-8"><img src="Cart icon.jpeg" alt=""></li>
+                    <li>Cart ($56)</li>
+                </ul>
+
             </div>
 
         </nav>
@@ -42,12 +43,14 @@
         </div>
 
     </header>
-    <main class="mx-37 mb-52 ">
-        <section>
+    <main>
+        <section class="mx-37 mb-52">
             <div class="justify-center items-center text-center mt-[120px] mb-[49px]">
-                <h2 class="font-serif font-bold text-[50px] w-"> <span class="text-orange-500">Our</span>
+                <h2 class="font-serif font-bold text-2xl lg:text-[50px]"> <span class="text-orange-500">Our</span>
                     Plants</h2>
-                <p class="fotn-[Inter] font-normal text-[22px] ">Indulge your senses with the beauty and fragrance of
+                <p class="fotn-[Inter] font-normal text-gray-500 text-sm  lg:text-[22px] ">Indulge your senses with the
+                    beauty and
+                    fragrance of
                     our fresh flower shop. From <br> classic roses
                     to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
@@ -102,7 +105,7 @@
                 </li>
             </div>
         </section>
-        <section class="mt-52 mb-33 grid grid-cols-2 gap-15">
+        <section class="mx-37  mb-30 grid grid-cols-2 gap-15">
             <div class="flex justify-between items-center">
                 <div class="w-[540px] h-[597px]">
                     <img src="assets/flower-store.png" alt="">
@@ -124,8 +127,8 @@
                 </ul>
             </div>
         </section>
-        <section class="w-full">
-            <div class="justify-center items-center text-center mt-[120px] mb-[49px]">
+        <section class="mb-30 mt-33">
+            <div class="justify-center items-center text-center ">
                 <h2 class="font-serif font-bold text-[50px] w-"> <span class="text-orange-500">Latest</span>
                     Deals</h2>
                 <p class="fotn-[Inter] font-normal text-[22px] ">Indulge your senses with the beauty and fragrance of
@@ -133,7 +136,7 @@
                     to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
         </section>
-        <section class="grid grid-cols-1 lg:grid-cols-3 lg:gap-7 w-full gap-3 rounded-xl">
+        <section class="mx-37 mb-30 grid grid-cols-1 lg:grid-cols-3 lg:gap-7 gap-3 rounded-xl">
             <div class=" w-full grid grid-col items-center justify-center gap-6 insert-auto ">
                 <div class="w-full ">
                     <img src="assets/deal-bloom.png" alt="" class="relative w-full object-cover">
@@ -159,9 +162,51 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="bg-[url('assets/news-letter-bg.png')] bg-cover bg-center w-full h-[533px] justify-center 
+                items-center text-center flex flex-col">
+
+                <h2 class="font-[Noto-serif] font-bold text-5xl text-white">Join the colorful Bunch</h2>
+                <div class="flex gap-0 justify-center items-center mt-6">
+                    <textarea placeholder="Write Email" name="" id="" class="bg-white w-161 h-12 px-5 py-2"></textarea>
+                    <button class="bg-amber-700 w-46 h-1 px-6 py-6 font-Inter font-semibold text-4
+                         text-white justify-center items-center text-center flex">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
-
+        <div class="grid grid-cols-3 px-40 py-12.5 gap-27.5">
+            <div class="">
+                <img src="assets/logo.png" alt="">
+                <p class="font-Inter font-normal text-[22px] text-gray-400 mt-4">Indulge your senses with the <br>
+                    beauty
+                    and fragrance of our fresh <br> flower shop.</p>
+            </div>
+            <div class="flex gap-27.5">
+                <ul class="font-Ag-Text font-medium text-gray-500 ">
+                    <li class="mb-8">Home</li>
+                    <li class="mb-8">About Us</li>
+                    <li class="mb-8">Blog</li>
+                    <li class="mb-8">FAQ</li>
+                    <li class="mb-8">Contact Us</li>
+                </ul>
+                <ul class="font-Ag-Text font-medium text-gray-500">
+                    <li class="mb-8">Features</li>
+                    <li class="mb-8">Pricing</li>
+                    <li class="mb-8">Privacy Policy</li>
+                    <li class="mb-8">Terms of Service</li>
+                    <li class="mb-8">Help Center</li>
+                </ul>
+            </div>
+            <div class="flex gap-6 justify-end">
+                <img src="assets/icon-linkedin.png" alt="" class="w-9 h-9">
+                <img src="assets/icon-twitter.png" alt="" class="w-9 h-9">
+                <img src="assets/icon-facebook.png" alt="" class="w-9 h-9">
+                <img src="assets/icon-youtube.png" alt="" class="w-9 h-9">
+            </div>
+        </div>
     </footer>
 
 </body>
